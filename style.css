@@ -1,0 +1,36 @@
+/*heading editing color to orange */
+.heading {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 300px;
+    font-size: 40px;
+}
+
+.sub-heading {
+
+    color: blue;
+    text-align: center;
+
+}
+
+/* Background image for the page */
+body {
+   background: white;               /* make body full viewport height */
+}
+
+
+/*log in details */
+.logIn {
+    text-align: center;
+}
+
+/*Note that the "b" mean button */
+.b {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.b:hover{
+    background: darkblue;
+}
