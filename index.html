@@ -174,12 +174,6 @@
             font-weight: bold;
         }
         
-        .music-btn {
-            background: linear-gradient(to right, #2196f3, #4caf50);
-            color: white;
-            font-weight: bold;
-        }
-        
         .message-btn {
             background: linear-gradient(to right, #9c27b0, #ff9800);
             color: white;
@@ -241,6 +235,8 @@
             .message { font-size: 1.3rem; }
             .card { padding: 20px; }
             button { padding: 12px 20px; font-size: 1rem; }
+            .controls { flex-direction: column; align-items: center; }
+            .controls button { width: 80%; }
         }
     </style>
 </head>
@@ -276,9 +272,6 @@
                 <button class="celebrate-btn" id="celebrateBtn">
                     <i class="fas fa-birthday-cake"></i> Celebrate!
                 </button>
-                <button class="music-btn" id="musicBtn">
-                    <i class="fas fa-music"></i> Play Music
-                </button>
                 <button class="message-btn" id="messageBtn">
                     <i class="fas fa-envelope"></i> Special Message
                 </button>
@@ -290,17 +283,11 @@
         </div>
     </div>
 
-    <audio id="birthdayMusic" loop>
-        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
-    </audio>
-
     <script>
         // Get DOM elements
         const celebrateBtn = document.getElementById('celebrateBtn');
-        const musicBtn = document.getElementById('musicBtn');
         const messageBtn = document.getElementById('messageBtn');
         const personalMessage = document.getElementById('personalMessage');
-        const birthdayMusic = document.getElementById('birthdayMusic');
         const birthdayName = document.getElementById('birthdayName');
         
         // Ask for friend's name
@@ -368,20 +355,6 @@
                 alert(`🎉🎂🎈 Happy Birthday ${friendName}! 🎈🎂🎉`);
             } else {
                 alert('🎉🎂🎈 Happy Birthday! 🎈🎂🎉');
-            }
-        });
-        
-        // Music button functionality
-        let isPlaying = false;
-        musicBtn.addEventListener('click', function() {
-            if (isPlaying) {
-                birthdayMusic.pause();
-                musicBtn.innerHTML = '<i class="fas fa-music"></i> Play Music';
-                isPlaying = false;
-            } else {
-                birthdayMusic.play();
-                musicBtn.innerHTML = '<i class="fas fa-pause"></i> Pause Music';
-                isPlaying = true;
             }
         });
         
