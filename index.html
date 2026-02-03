@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Card</title>
+    <title>Happy Birthday!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
         
         body {
@@ -19,73 +19,80 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 15px;
             overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
         }
         
         .container {
-            max-width: 800px;
             width: 100%;
+            max-width: 500px;
             text-align: center;
         }
         
         .header {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         
         h1 {
             color: #ff4081;
-            font-size: 3.5rem;
-            text-shadow: 3px 3px 0 #ffcc00;
-            margin-bottom: 10px;
+            font-size: 2.8rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 0 #ffcc00;
+            margin-bottom: 15px;
             animation: bounce 2s infinite;
+            line-height: 1.2;
         }
         
         .birthday-person {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
             color: #2196f3;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 12px 25px;
             border-radius: 50px;
             display: inline-block;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            border: 3px solid #ffcc00;
         }
         
         .card {
             background-color: white;
             border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-            margin-bottom: 30px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            margin-bottom: 25px;
             position: relative;
             overflow: hidden;
-            border: 10px solid #ffcc00;
+            border: 8px solid #ffcc00;
         }
         
         .card:before {
             content: "";
             position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
             background: linear-gradient(45deg, #ff4081, #2196f3, #ffcc00, #4caf50);
             z-index: -1;
             animation: rainbow 4s linear infinite;
         }
         
         .message {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             line-height: 1.6;
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+            padding: 0 5px;
         }
         
         .cake-container {
             position: relative;
-            height: 150px;
-            margin: 30px 0;
+            height: 130px;
+            margin: 25px 0;
         }
         
         .cake {
@@ -96,52 +103,52 @@
         }
         
         .cake-base {
-            width: 200px;
-            height: 60px;
+            width: 180px;
+            height: 55px;
             background-color: #f8c8dc;
             border-radius: 10px;
         }
         
         .cake-middle {
-            width: 160px;
-            height: 50px;
+            width: 140px;
+            height: 45px;
             background-color: #ffcc00;
             border-radius: 10px;
             position: absolute;
-            top: -40px;
+            top: -35px;
             left: 50%;
             transform: translateX(-50%);
         }
         
         .cake-top {
-            width: 120px;
-            height: 40px;
+            width: 110px;
+            height: 35px;
             background-color: #ff4081;
             border-radius: 10px;
             position: absolute;
-            top: -70px;
+            top: -65px;
             left: 50%;
             transform: translateX(-50%);
         }
         
         .candle {
-            width: 15px;
-            height: 40px;
+            width: 12px;
+            height: 35px;
             background-color: #4caf50;
             position: absolute;
-            top: -110px;
+            top: -95px;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 5px;
         }
         
         .flame {
-            width: 20px;
-            height: 30px;
+            width: 16px;
+            height: 25px;
             background-color: #ff9800;
             border-radius: 50% 50% 20% 20%;
             position: absolute;
-            top: -140px;
+            top: -120px;
             left: 50%;
             transform: translateX(-50%);
             animation: flicker 0.5s infinite alternate;
@@ -149,69 +156,74 @@
         
         .controls {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            flex-direction: column;
+            gap: 15px;
             margin-top: 20px;
-            flex-wrap: wrap;
+            width: 100%;
         }
         
         button {
-            padding: 15px 30px;
-            font-size: 1.2rem;
+            padding: 16px 20px;
+            font-size: 1.3rem;
             border: none;
-            border-radius: 50px;
+            border-radius: 15px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
+            font-weight: 600;
+            width: 100%;
+            touch-action: manipulation;
         }
         
         .celebrate-btn {
             background: linear-gradient(to right, #ff4081, #ffcc00);
             color: white;
-            font-weight: bold;
         }
         
         .message-btn {
             background: linear-gradient(to right, #9c27b0, #ff9800);
             color: white;
-            font-weight: bold;
         }
         
-        button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        button:active {
+            transform: translateY(3px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
         }
         
         .confetti {
             position: absolute;
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             opacity: 0;
+            pointer-events: none;
         }
         
         .personal-message {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 18px;
             border-radius: 15px;
-            margin-top: 30px;
+            margin-top: 20px;
             display: none;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #333;
             border-left: 5px solid #ff4081;
+            text-align: left;
+            line-height: 1.5;
         }
         
         .footer {
-            margin-top: 20px;
+            margin-top: 15px;
             color: #666;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            padding: 0 10px;
         }
         
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-15px); }
         }
         
         @keyframes flicker {
@@ -229,14 +241,25 @@
             100% { transform: translateY(1000px) rotate(360deg); opacity: 0; }
         }
         
-        @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
+        /* Larger phones */
+        @media (min-width: 400px) {
+            h1 { font-size: 3rem; }
             .birthday-person { font-size: 2rem; }
-            .message { font-size: 1.3rem; }
-            .card { padding: 20px; }
-            button { padding: 12px 20px; font-size: 1rem; }
-            .controls { flex-direction: column; align-items: center; }
-            .controls button { width: 80%; }
+            .message { font-size: 1.4rem; }
+        }
+        
+        /* Tablet */
+        @media (min-width: 768px) {
+            .container { max-width: 500px; }
+            h1 { font-size: 3.2rem; }
+            .controls { flex-direction: row; }
+            .controls button { width: auto; padding: 16px 30px; }
+        }
+        
+        /* Prevent text selection on buttons */
+        button {
+            user-select: none;
+            -webkit-user-select: none;
         }
     </style>
 </head>
@@ -249,8 +272,7 @@
         
         <div class="card">
             <div class="message">
-                Wishing you a day filled with happiness, joy, and all the things that make you smile! 
-                May this year bring you success in all your endeavors and lots of wonderful memories.
+                Wishing you a day filled with happiness, joy, and all the things that make you smile! May this year bring you wonderful memories.
             </div>
             
             <div class="cake-container">
@@ -264,8 +286,7 @@
             </div>
             
             <div class="personal-message" id="personalMessage">
-                You're an amazing friend and I'm so grateful to have you in my life. 
-                Hope your birthday is as incredible as you are! 🎉🎂
+                You're an amazing friend and I'm so grateful to have you in my life. Hope your birthday is as incredible as you are! 🎉🎂
             </div>
             
             <div class="controls">
@@ -284,34 +305,45 @@
     </div>
 
     <script>
+        // Mobile-friendly touch optimizations
+        document.addEventListener('touchstart', function() {}, {passive: true});
+        
         // Get DOM elements
         const celebrateBtn = document.getElementById('celebrateBtn');
         const messageBtn = document.getElementById('messageBtn');
         const personalMessage = document.getElementById('personalMessage');
         const birthdayName = document.getElementById('birthdayName');
         
-        // Ask for friend's name
-        const friendName = prompt("Enter your friend's name:", "My Awesome Friend");
-        if (friendName) {
-            birthdayName.textContent = friendName;
-            document.title = `Happy Birthday ${friendName}!`;
-        }
+        // Ask for friend's name (mobile-friendly prompt)
+        setTimeout(() => {
+            const friendName = prompt("Enter your friend's name:", "Wavhudi");
+            if (friendName && friendName.trim()) {
+                birthdayName.textContent = friendName;
+                document.title = `Happy Birthday ${friendName}!`;
+                
+                // Update message with friend's name
+                const originalMessage = document.querySelector('.message');
+                originalMessage.innerHTML = 
+                    `Wishing you a day filled with happiness, joy, and all the things that make you smile, ${friendName}! May this year bring you wonderful memories.`;
+            }
+        }, 500); // Small delay for better UX
         
-        // Create confetti particles
+        // Create confetti particles (mobile optimized)
         function createConfetti() {
             const colors = ['#ff4081', '#2196f3', '#ffcc00', '#4caf50', '#9c27b0'];
             const container = document.querySelector('.container');
             
-            for (let i = 0; i < 150; i++) {
+            // Fewer particles for mobile performance
+            for (let i = 0; i < 80; i++) {
                 const confetti = document.createElement('div');
                 confetti.className = 'confetti';
                 
                 // Random properties
                 const color = colors[Math.floor(Math.random() * colors.length)];
-                const size = Math.random() * 10 + 5;
+                const size = Math.random() * 8 + 4;
                 const left = Math.random() * 100;
-                const animationDelay = Math.random() * 5;
-                const animationDuration = Math.random() * 3 + 3;
+                const animationDelay = Math.random() * 3;
+                const animationDuration = Math.random() * 2 + 2;
                 
                 // Apply styles
                 confetti.style.backgroundColor = color;
@@ -325,36 +357,37 @@
                 
                 // Remove confetti after animation completes
                 setTimeout(() => {
-                    confetti.remove();
+                    if (confetti.parentNode) {
+                        confetti.remove();
+                    }
                 }, (animationDelay + animationDuration) * 1000);
             }
         }
         
-        // Celebrate button functionality
+        // Celebrate button functionality (touch optimized)
         celebrateBtn.addEventListener('click', function() {
             createConfetti();
             
+            // Haptic feedback simulation
+            if (navigator.vibrate) {
+                navigator.vibrate(50);
+            }
+            
             // Animate the cake
             const cake = document.querySelector('.cake');
-            cake.style.transform = 'translateX(-50%) scale(1.2)';
-            cake.style.transition = 'transform 0.3s';
+            cake.style.transform = 'translateX(-50%) scale(1.15)';
+            cake.style.transition = 'transform 0.2s';
             
             setTimeout(() => {
                 cake.style.transform = 'translateX(-50%) scale(1)';
-            }, 300);
-            
-            // Animate the title
-            const title = document.querySelector('h1');
-            title.style.animation = 'none';
-            setTimeout(() => {
-                title.style.animation = 'bounce 2s infinite';
-            }, 10);
+            }, 200);
             
             // Show celebration message
-            if (friendName) {
-                alert(`🎉🎂🎈 Happy Birthday ${friendName}! 🎈🎂🎉`);
+            const friendName = birthdayName.textContent;
+            if (friendName !== "My Awesome Friend!") {
+                alert(`🎉🎂🎈 Happy Birthday ${friendName}! 🎈🎂🎉\n\nWishing you an amazing day!`);
             } else {
-                alert('🎉🎂🎈 Happy Birthday! 🎈🎂🎉');
+                alert('🎉🎂🎈 Happy Birthday! 🎈🎂🎉\n\nWishing you an amazing day!');
             }
         });
         
@@ -368,13 +401,20 @@
                 messageBtn.innerHTML = '<i class="fas fa-times"></i> Hide Message';
                 
                 // Add a personalized touch to the message
-                if (friendName) {
+                const friendName = birthdayName.textContent;
+                if (friendName !== "My Awesome Friend!") {
                     personalMessage.innerHTML = 
-                        `Dear ${friendName},<br><br>
+                        `<strong>Dear ${friendName},</strong><br><br>
                         You're an amazing friend and I'm so grateful to have you in my life. 
                         Hope your birthday is as incredible as you are!<br><br>
-                        Wishing you all the happiness in the world today and always! 🎉🎂`;
+                        Wishing you all the happiness in the world today and always!<br><br>
+                        🎉🎂🎈`;
                 }
+            }
+            
+            // Haptic feedback
+            if (navigator.vibrate) {
+                navigator.vibrate(30);
             }
         });
         
@@ -383,6 +423,23 @@
             setTimeout(() => {
                 createConfetti();
             }, 1000);
+        });
+        
+        // Prevent zoom on double-tap
+        document.addEventListener('dblclick', function(e) {
+            e.preventDefault();
+        }, { passive: false });
+        
+        // Better button feedback for mobile
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('touchstart', function() {
+                this.style.opacity = '0.8';
+            });
+            
+            button.addEventListener('touchend', function() {
+                this.style.opacity = '1';
+            });
         });
     </script>
 </body>
