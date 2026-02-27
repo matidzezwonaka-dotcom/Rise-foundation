@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <title>LINDA · MASSIVE</title>
+    <title>LINDA · FAT & HAPPY</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* ===== EVERYTHING IS MASSIVE ===== */
+        /* ===== F A T   M O D E — everything wider, thicker, happier ===== */
         * {
             margin: 0;
             padding: 0;
@@ -15,360 +15,362 @@
         }
 
         body {
-            background: linear-gradient(145deg, #a8d4ff, #c5e6ff);
+            background: linear-gradient(145deg, #9ecaf5, #c5e3ff);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            padding: 12px;
+            padding: 8px;
         }
 
         .container {
             width: 100%;
-            max-width: 700px;        /* WIDE */
+            max-width: 760px;        /* W I D E R */
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            min-height: 90vh;        /* almost full screen */
+            gap: 18px;
+            min-height: 95vh;
             justify-content: center;
         }
 
-        /* ===== NAME SECTION — ABSOLUTE UNIT ===== */
-        .name-beast {
+        /* ===== N A M E   C H O N K ===== */
+        .name-chonk {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border-radius: 70px;
-            padding: 28px 20px;
-            border: 6px solid white;
+            border-radius: 80px;           /* FAT corners */
+            padding: 32px 24px;             /* EXTRA PADDING */
+            border: 8px solid white;        /* THICC border */
             text-align: center;
-            box-shadow: 0 20px 30px rgba(0, 120, 210, 0.3);
+            box-shadow: 0 25px 35px rgba(0, 110, 200, 0.3);
         }
 
-        .greet-beast {
-            font-size: 3rem;           /* HUGE */
-            font-weight: 700;
+        .greet-chonk {
+            font-size: 3.2rem;              /* BIG */
+            font-weight: 800;
             color: #014a73;
             letter-spacing: 2px;
         }
 
-        .name-beast-main {
-            font-size: 7rem;            /* MAMMOTH */
+        .name-chonk-main {
+            font-size: 8rem;                 /* M A S S I V E */
             font-weight: 900;
             background: linear-gradient(145deg, #02679e, #3f99d4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            line-height: 1.1;
-            text-shadow: 4px 4px 0 white;
+            line-height: 1;
+            text-shadow: 5px 5px 0 white;
             white-space: nowrap;
         }
 
-        /* ===== MAIN CARD — BIGGER ===== */
-        .card-beast {
+        /* ===== M A I N   C A R D — T H I C C ===== */
+        .card-chonk {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-radius: 70px;
-            padding: 40px 30px;
-            border: 6px solid white;
-            box-shadow: 0 25px 35px rgba(0, 130, 220, 0.3);
+            border-radius: 80px;
+            padding: 45px 35px;              /* FAT padding */
+            border: 8px solid white;
+            box-shadow: 0 30px 40px rgba(0, 120, 210, 0.35);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .message-beast {
-            font-size: 2.5rem;          /* BIG MESSAGE */
+        .message-chonk {
+            font-size: 2.7rem;                /* FAT text */
             text-align: center;
             color: #013a5a;
             font-weight: 700;
             line-height: 1.5;
             margin-bottom: 30px;
+            padding: 0 10px;
         }
 
-        /* ===== CAKE — 70% OF SCREEN ENERGY ===== */
-        .cake-beast {
+        /* ===== C A K E   C H O N K — 70% SCREEN + WIDE ===== */
+        .cake-chonk {
             position: relative;
-            height: 45vh;                /* ALMOST HALF SCREEN */
-            min-height: 280px;
+            height: 48vh;                      /* almost half screen */
+            min-height: 320px;
             width: 100%;
-            margin: 20px 0 40px;
+            margin: 25px 0 45px;
             display: flex;
             justify-content: center;
         }
 
-        .base-beast {
+        .base-chonk {
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 90%;
+            width: 95%;                         /* WIDER cake */
+            max-width: 600px;
+            height: 30%;
+            background: #a8d2ff;
+            border-radius: 80px 80px 35px 35px;  /* FATTER corners */
+            border: 8px solid white;
+            box-shadow: 0 15px 0 #77abe0;
+        }
+
+        .mid-chonk {
+            position: absolute;
+            bottom: 26%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
             max-width: 500px;
-            height: 28%;
-            background: #b0d6ff;
+            height: 26%;
+            background: #94c4fc;
             border-radius: 70px 70px 30px 30px;
-            border: 6px solid white;
-            box-shadow: 0 12px 0 #7aafe0;
+            border: 8px solid white;
+            box-shadow: 0 13px 0 #5894d0;
         }
 
-        .mid-beast {
+        .top-chonk {
             position: absolute;
-            bottom: 25%;
+            bottom: 48%;
             left: 50%;
             transform: translateX(-50%);
-            width: 75%;
-            max-width: 420px;
+            width: 65%;
+            max-width: 400px;
             height: 24%;
-            background: #9ec9fc;
+            background: #7eb3f0;
             border-radius: 60px 60px 25px 25px;
-            border: 6px solid white;
-            box-shadow: 0 10px 0 #5e9ad2;
+            border: 8px solid white;
+            box-shadow: 0 12px 0 #3a7ac0;
         }
 
-        .top-beast {
+        .candle-chonk {
             position: absolute;
-            bottom: 46%;
+            bottom: 68%;
             left: 50%;
             transform: translateX(-50%);
-            width: 60%;
-            max-width: 340px;
-            height: 22%;
-            background: #87baf0;
-            border-radius: 50px 50px 20px 20px;
-            border: 6px solid white;
-            box-shadow: 0 10px 0 #407ec0;
-        }
-
-        .candle-beast {
-            position: absolute;
-            bottom: 65%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 5%;
-            min-width: 28px;
-            height: 18%;
+            width: 6%;
+            min-width: 32px;
+            height: 20%;
             background: #fff2de;
-            border-radius: 20px 20px 6px 6px;
-            border: 4px solid white;
+            border-radius: 25px 25px 8px 8px;
+            border: 5px solid white;
             z-index: 10;
         }
 
-        .flame-beast {
+        .flame-chonk {
             position: absolute;
-            bottom: 82%;
+            bottom: 86%;
             left: 50%;
             transform: translateX(-50%);
-            width: 7%;
-            min-width: 42px;
-            height: 14%;
+            width: 8%;
+            min-width: 48px;
+            height: 15%;
             background: radial-gradient(circle, #ffe88c 20%, #ffad4a 90%);
             border-radius: 50% 50% 30% 30%;
-            filter: drop-shadow(0 0 20px #ffb45e);
-            animation: flickerBeast 0.6s infinite alternate;
+            filter: drop-shadow(0 0 25px #ffb45e);
+            animation: flickerChonk 0.6s infinite alternate;
             z-index: 15;
         }
 
-        @keyframes flickerBeast {
+        @keyframes flickerChonk {
             0% { transform: translateX(-50%) scale(1); opacity: 0.95; }
-            100% { transform: translateX(-50%) scale(1.3); opacity: 1; }
+            100% { transform: translateX(-50%) scale(1.35); opacity: 1; }
         }
 
-        /* ===== BUTTONS — THICC ===== */
-        .button-beast {
+        /* ===== B U T T O N S — A B S O L U T E   U N I T S ===== */
+        .button-chonk {
             display: flex;
             flex-direction: column;
             width: 100%;
-            gap: 25px;
-            margin: 25px 0 20px;
+            gap: 28px;                        /* FAT gap */
+            margin: 30px 0 25px;
         }
 
-        .btn-beast {
+        .btn-chonk {
             background: white;
-            border: 6px solid #b9dbff;
-            border-radius: 100px;
-            padding: 32px 20px;           /* MASSIVE */
-            font-size: 2.8rem;             /* HUGE TEXT */
+            border: 8px solid #b3d9ff;        /* THICC border */
+            border-radius: 120px;              /* EXTRA round */
+            padding: 38px 25px;                 /* MASSIVE tap target */
+            font-size: 3.2rem;                  /* HUGE text */
             font-weight: 800;
             color: #015f94;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 25px;
+            gap: 30px;
             width: 100%;
-            box-shadow: 0 14px 0 #71afe0, 0 20px 30px rgba(0,120,210,0.35);
+            box-shadow: 0 16px 0 #6dabe0, 0 25px 35px rgba(0,120,210,0.4);
             transition: all 0.08s linear;
             cursor: pointer;
             touch-action: manipulation;
         }
 
-        .btn-beast:active {
-            transform: translateY(10px);
-            box-shadow: 0 4px 0 #71afe0, 0 20px 25px rgba(0,120,210,0.25);
+        .btn-chonk:active {
+            transform: translateY(12px);
+            box-shadow: 0 4px 0 #6dabe0, 0 25px 30px rgba(0,120,210,0.3);
         }
 
-        .btn-beast i {
-            font-size: 3.5rem;
+        .btn-chonk i {
+            font-size: 4rem;
             color: #0277bd;
         }
 
-        /* ===== SECRET NOTE — BIG & BEAUTIFUL ===== */
-        .secret-beast {
-            background: rgba(255, 255, 255, 0.97);
+        /* ===== S E C R E T   N O T E — W I D E   &   F A T ===== */
+        .secret-chonk {
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            border-radius: 70px;
-            padding: 45px 35px;
-            margin-top: 25px;
-            border: 6px solid white;
+            border-radius: 80px;
+            padding: 50px 40px;                /* FAT padding */
+            margin-top: 30px;
+            border: 8px solid white;
             display: none;
-            font-size: 2.4rem;            /* BIG TEXT */
+            font-size: 2.6rem;                  /* BIG text */
             line-height: 1.7;
             color: #013a5a;
             width: 100%;
-            box-shadow: inset 0 0 0 4px rgba(255,255,255,0.9);
+            box-shadow: inset 0 0 0 5px rgba(255,255,255,0.9);
         }
 
-        .secret-beast.show {
+        .secret-chonk.show {
             display: block;
         }
 
-        .secret-beast i {
-            font-size: 4rem;
+        .secret-chonk i {
+            font-size: 4.5rem;
             display: block;
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             color: #0280c0;
         }
 
-        /* ===== FOOTER — BIG ===== */
-        .footer-beast {
-            font-size: 2rem;
+        /* ===== F O O T E R — T H I C C ===== */
+        .footer-chonk {
+            font-size: 2.2rem;
             text-align: center;
             background: rgba(255,255,255,0.7);
             backdrop-filter: blur(8px);
-            padding: 25px 18px;
-            border-radius: 80px;
-            border: 5px solid white;
+            padding: 28px 20px;
+            border-radius: 90px;
+            border: 6px solid white;
             color: #014a73;
         }
 
-        /* confetti */
-        .confetti-beast {
+        /* confetti — extra chunky */
+        .confetti-chonk {
             position: fixed;
-            width: 18px;
-            height: 18px;
-            background: #b9dcff;
+            width: 22px;
+            height: 22px;
+            background: #b3d9ff;
             pointer-events: none;
             z-index: 9999;
-            box-shadow: 0 0 15px white;
+            box-shadow: 0 0 20px white;
         }
 
-        @media (max-width: 500px) {
-            .name-beast-main { font-size: 5.5rem; }
-            .greet-beast { font-size: 2.5rem; }
-            .message-beast { font-size: 2rem; }
-            .btn-beast { font-size: 2.2rem; padding: 28px; }
-            .secret-beast { font-size: 1.9rem; }
+        /* even fatter on smaller screens */
+        @media (max-width: 550px) {
+            .name-chonk-main { font-size: 6rem; }
+            .greet-chonk { font-size: 2.8rem; }
+            .message-chonk { font-size: 2.3rem; }
+            .btn-chonk { font-size: 2.6rem; padding: 32px; }
+            .secret-chonk { font-size: 2.2rem; padding: 40px 30px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- MASSIVE NAME -->
-        <div class="name-beast">
-            <div class="greet-beast">💙 HAPPY BIRTHDAY</div>
-            <div class="name-beast-main" id="lindaBeast">LINDA</div>
+        <!-- FATTEST NAME -->
+        <div class="name-chonk">
+            <div class="greet-chonk">💙 HAPPY BIRTHDAY</div>
+            <div class="name-chonk-main" id="lindaChonk">LINDA</div>
         </div>
 
-        <!-- MASSIVE CARD -->
-        <div class="card-beast">
-            <div class="message-beast" id="msgBeast">
+        <!-- FATTEST CARD -->
+        <div class="card-chonk">
+            <div class="message-chonk" id="msgChonk">
                 💙 YOU + LIGHT BLUE = PERFECT
             </div>
 
-            <!-- MASSIVE CAKE (70% ENERGY) -->
-            <div class="cake-beast">
-                <div class="base-beast"></div>
-                <div class="mid-beast"></div>
-                <div class="top-beast"></div>
-                <div class="candle-beast"></div>
-                <div class="flame-beast"></div>
+            <!-- FATTEST CAKE -->
+            <div class="cake-chonk">
+                <div class="base-chonk"></div>
+                <div class="mid-chonk"></div>
+                <div class="top-chonk"></div>
+                <div class="candle-chonk"></div>
+                <div class="flame-chonk"></div>
             </div>
 
-            <!-- MASSIVE BUTTONS -->
-            <div class="button-beast">
-                <button class="btn-beast" id="celebrateBeast">
+            <!-- FATTEST BUTTONS -->
+            <div class="button-chonk">
+                <button class="btn-chonk" id="celebrateChonk">
                     <i class="fa-regular fa-star"></i> CELEBRATE
                 </button>
-                <button class="btn-beast" id="messageBeast">
+                <button class="btn-chonk" id="messageChonk">
                     <i class="fa-regular fa-envelope"></i> SECRET
                 </button>
             </div>
 
-            <!-- MASSIVE SECRET NOTE -->
-            <div class="secret-beast" id="secretBeast">
+            <!-- FATTEST SECRET NOTE -->
+            <div class="secret-chonk" id="secretChonk">
                 <i class="fa-regular fa-heart"></i>
-                <strong>LINDA</strong>, you're a whole sky of light blue — massive, beautiful, and one of a kind. Hope your day is as HUGE as you are to me! 💙🎂✨
+                <strong>LINDA</strong>, you're a whole sky of light blue — FAT with beauty, WIDE with kindness, and absolutely PERFECT. Hope your day is as HUGE as you are to me! 💙🎂✨
             </div>
         </div>
 
-        <!-- MASSIVE FOOTER -->
-        <div class="footer-beast">
-            <i class="fa-regular fa-star"></i> MASSIVE LIGHT BLUE LOVE <i class="fa-regular fa-star"></i>
+        <!-- FATTEST FOOTER -->
+        <div class="footer-chonk">
+            <i class="fa-regular fa-star"></i> FAT LIGHT BLUE LOVE <i class="fa-regular fa-star"></i>
         </div>
     </div>
 
     <script>
         (function() {
-            const nameEl = document.getElementById('lindaBeast');
-            const msgEl = document.getElementById('msgBeast');
-            const secretEl = document.getElementById('secretBeast');
+            const nameEl = document.getElementById('lindaChonk');
+            const msgEl = document.getElementById('msgChonk');
+            const secretEl = document.getElementById('secretChonk');
 
             const friend = 'LINDA';
             nameEl.innerText = friend;
             msgEl.innerHTML = `💙 YOU + LIGHT BLUE = PERFECT, ${friend}`;
             secretEl.innerHTML = `
                 <i class="fa-regular fa-heart"></i>
-                <strong>${friend}</strong>, you're a whole sky of light blue — massive, beautiful, and one of a kind. Hope your day is as HUGE as you are to me! 💙🎂✨
+                <strong>${friend}</strong>, you're a whole sky of light blue — FAT with beauty, WIDE with kindness, and absolutely PERFECT. Hope your day is as HUGE as you are to me! 💙🎂✨
             `;
 
-            // confetti blast
-            function blast() {
-                const cols = ['#cae9ff','#acd3ff','#ffffff','#b9dbff','#9ec7f5'];
-                for (let i=0; i<90; i++) {
+            // FAT confetti blast
+            function fatBlast() {
+                const cols = ['#c3e4ff','#a8d0ff','#ffffff','#b5d9ff','#9ac4f5', '#d8edff'];
+                for (let i=0; i<100; i++) {
                     let c = document.createElement('div');
-                    c.className = 'confetti-beast';
+                    c.className = 'confetti-chonk';
                     c.style.background = cols[Math.floor(Math.random()*cols.length)];
-                    let s = Math.random()*20 + 12;
+                    let s = Math.random()*24 + 14;  // FAT confetti
                     c.style.width = s+'px';
                     c.style.height = s+'px';
                     c.style.left = Math.random()*100+'%';
                     c.style.top = '-30px';
-                    c.style.borderRadius = (Math.random()>0.5) ? '5px' : '50%';
+                    c.style.borderRadius = (Math.random()>0.5) ? '6px' : '50%';
                     document.body.appendChild(c);
 
                     let anim = c.animate([
                         { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
-                        { transform: `translateY(${window.innerHeight+200}px) rotate(${Math.random()*720}deg)`, opacity: 0.2 }
-                    ], { duration: 2500+Math.random()*2200, easing: 'ease-out' });
+                        { transform: `translateY(${window.innerHeight+250}px) rotate(${Math.random()*720}deg)`, opacity: 0.2 }
+                    ], { duration: 2800+Math.random()*2400, easing: 'ease-out' });
                     anim.onfinish = () => c.remove();
                 }
-                if (navigator.vibrate) navigator.vibrate(40);
+                if (navigator.vibrate) navigator.vibrate(50);
             }
 
-            document.getElementById('celebrateBeast').addEventListener('click', function(e){
+            document.getElementById('celebrateChonk').addEventListener('click', function(e){
                 e.preventDefault();
-                blast();
-                let cake = document.querySelector('.cake-beast');
-                cake.style.transform = 'scale(1.1)';
+                fatBlast();
+                let cake = document.querySelector('.cake-chonk');
+                cake.style.transform = 'scale(1.15)';
                 cake.style.transition = 'transform 0.15s';
                 setTimeout(()=> cake.style.transform = 'scale(1)', 150);
                 setTimeout(()=> alert(`🎉 HAPPY BIRTHDAY ${friend}! 🎂💙`), 120);
             });
 
-            const msgBtn = document.getElementById('messageBeast');
-            const secretDiv = document.getElementById('secretBeast');
+            const msgBtn = document.getElementById('messageChonk');
+            const secretDiv = document.getElementById('secretChonk');
             msgBtn.addEventListener('click', function(){
                 if (secretDiv.classList.contains('show')) {
                     secretDiv.classList.remove('show');
@@ -380,13 +382,13 @@
                 if (navigator.vibrate) navigator.vibrate(20);
             });
 
-            document.querySelector('.flame-beast').addEventListener('click', function(ev){
+            document.querySelector('.flame-chonk').addEventListener('click', function(ev){
                 ev.stopPropagation();
-                blast();
+                fatBlast();
             });
 
             window.addEventListener('load', ()=>{
-                setTimeout(()=> blast(), 700);
+                setTimeout(()=> fatBlast(), 700);
             });
 
             document.addEventListener('dblclick', e=> e.preventDefault(), {passive:false});
